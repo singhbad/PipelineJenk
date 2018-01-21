@@ -30,12 +30,13 @@ tools {
 		post {
 		success {
 		
-		junit 'junit 'NumberGenerator/target/surefire-reports/*.xml'
+		junit 'NumberGenerator/target/surefire-reports/*.xml'
 		
 		}
 		
 		}
-		}
+		
 
+}
 }
 }
