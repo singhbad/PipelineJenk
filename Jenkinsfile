@@ -24,7 +24,7 @@ tools {
 		stage('Build'){
 		steps
 		{
-		bat ' cd NumberGeberator & mvn package'
+		bat ' cd NumberGenerator & mvn package'
 		}
 		
 		post {
