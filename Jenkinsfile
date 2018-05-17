@@ -1,4 +1,4 @@
-#!groovy:wq
+#!groovy
 pipeline
 {
 agent 
