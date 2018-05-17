@@ -6,8 +6,6 @@ agent
 	label "master"
 	
 }
-
-
 tools {
 		maven 'Maven3.1.1'
 		jdk 'java8'
@@ -29,16 +27,6 @@ tools {
 		{
 		bat ' cd NumberGenerator & mvn package'
 		}
-		}
-		stage('Display')
-		{
-		steps
-		{
-		echo 'Hello world!'
-		
-		}
-		
-		}
 		
 		post {
 		success {
@@ -52,4 +40,4 @@ tools {
 
 }
 }
-
+}
