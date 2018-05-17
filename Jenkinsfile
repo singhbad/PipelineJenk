@@ -27,13 +27,7 @@ tools {
 		{
 		bat ' cd NumberGenerator & mvn package'
 		}
-		}
-		stage('Display'){
-		steps
-		{
-		echo "Hi"
-		}
-		}
+		
 		post {
 		success {
 		
