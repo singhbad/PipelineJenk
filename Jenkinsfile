@@ -32,7 +32,7 @@ tools {
 		{
 		echo "Hi"
 		}
-		
+		}
 		post {
 		success {
 		
