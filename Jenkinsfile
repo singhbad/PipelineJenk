@@ -6,6 +6,11 @@ agent
 	label "master"
 	
 }
+
+environment{
+
+
+			}
 tools {
 		maven 'Maven3.1.1'
 		jdk 'java8'
@@ -26,6 +31,16 @@ tools {
 		steps
 		{
 		bat ' cd NumberGenerator & mvn package'
+		}
+		
+		stage('Display')
+		{
+		steps
+		{
+		echo 'Hello world!'
+		
+		}
+		
 		}
 		
 		post {
