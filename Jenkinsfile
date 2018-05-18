@@ -3,7 +3,8 @@ node {
 
 	deleteDir()
     def PROJECT_NAME = "project_name"
-	def scmVars = checkout scm
+	//def scmVars = checkout scm
+	multiRepoScmCheckOut(
 	makeDirectory()
 	
     // Clean workspace before doing anything
@@ -41,4 +42,16 @@ def mvn() {
 	
 	bat 'cd NumberGenerator & mvn package'
 	
+}
+
+def multiRepoScmCheckOut() {
+	dir('repo1') 
+	{
+		git url: 'https://github.com/singhbad/PipelineJenk.git' 
+	}
+	dir('repo2')
+	{
+		git url: 'https://github.com/singhbad/Jenkins_Dragon.git' 
+	}
+
 }
