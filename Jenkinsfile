@@ -1,11 +1,13 @@
 #!groovy
 node {
+
+	deleteDir()
     def PROJECT_NAME = "project_name"
 	def scmVars = checkout scm
 	makeDirectory()
 	
     // Clean workspace before doing anything
-    // deleteDir()
+    
 	notifyFailed()
 	mvn()
 
