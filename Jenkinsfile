@@ -2,6 +2,8 @@
 node {
     def PROJECT_NAME = "project_name"
 	def scmVars = checkout scm
+	makeDirectory()
+	
     // Clean workspace before doing anything
     // deleteDir()
 	notifyFailed()
@@ -9,6 +11,11 @@ node {
 
 }
 
+def makeDirectory() {
+
+	bat 'mkdir repo1 & repo2'
+
+}
 
 
 def notifyDeployedVersion(String version) {
