@@ -50,12 +50,12 @@ def multiRepoScmCheckOut() {
 	dir('repo1') 
 	{
 		git url: 'https://github.com/singhbad/PipelineJenk.git'
-		branches: '[[name: '*/master]]' 
+		//branches: '[[name: '*/master]]' 
 	}
 	dir('repo2')
 	{
 		git url: 'https://github.com/singhbad/Jenkins_Dragon.git' 
-		branches: '[[name: '*/Jenkins_Dragon]]'
+		//branches: '[[name: '*/Jenkins_Dragon]]'
 	}
 
 }
