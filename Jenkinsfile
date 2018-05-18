@@ -2,9 +2,10 @@
 node {
 
 	deleteDir()
-	makeDirectory()
     def PROJECT_NAME = "project_name"
 	//def scmVars = checkout scm
+	
+	makeDirectory()
 	multiRepoScmCheckOut()
 	
 	
@@ -48,11 +49,11 @@ def mvn() {
 def multiRepoScmCheckOut() {
 	dir('repo1') 
 	{
-		git url: 'https://github.com/singhbad/PipelineJenk.git, branches: [[name: '*/Jenkins_Dragon]]'
+		git url: 'https://github.com/singhbad/PipelineJenk.git' 
 	}
 	dir('repo2')
 	{
-		git url: 'https://github.com/singhbad/Jenkins_Dragon.git, branches: [[name: '*/master]]'
+		git url: 'https://github.com/singhbad/Jenkins_Dragon.git' 
 	}
 
 }
