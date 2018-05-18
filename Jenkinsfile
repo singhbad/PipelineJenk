@@ -13,7 +13,8 @@ node {
 
 def makeDirectory() {
 
-	bat 'mkdir repo1 & repo2'
+	bat 'mkdir repo1'
+	bat 'mkdir repo2'
 
 }
 
