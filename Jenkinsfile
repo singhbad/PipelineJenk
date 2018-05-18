@@ -4,6 +4,8 @@ node {
 
     // Clean workspace before doing anything
     // deleteDir()
+	notifyFailed()
+	notifyDeployedVersion(String version)
 
 }
 
