@@ -5,7 +5,7 @@ node {
     // Clean workspace before doing anything
     // deleteDir()
 	notifyFailed()
-	notifyDeployedVersion(String version)
+	mvn()
 
 }
 
@@ -23,4 +23,10 @@ def notifyFailed() {
       body: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]': Check console output at '${env.BUILD_URL}' [${env.BUILD_NUMBER}]",
       to: "badal.singh243@gmail.com"
     )
+}
+
+def mvn() {
+	
+	bat 'cd NumberGenerator & mvn package'
+	
 }
