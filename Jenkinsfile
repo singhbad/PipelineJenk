@@ -4,7 +4,7 @@ node {
 	deleteDir()
     def PROJECT_NAME = "project_name"
 	//def scmVars = checkout scm
-	multiRepoScmCheckOut(
+	multiRepoScmCheckOut()
 	makeDirectory()
 	
     // Clean workspace before doing anything
