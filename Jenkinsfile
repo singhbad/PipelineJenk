@@ -3,7 +3,7 @@ node {
     def PROJECT_NAME = "project_name"
 
     // Clean workspace before doing anything
-    deleteDir()
+    // deleteDir()
 
 }
 
