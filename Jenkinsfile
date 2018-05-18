@@ -42,18 +42,20 @@ def notifyFailed() {
 
 def mvn() {
 	
-	bat 'cd NumberGenerator & mvn package'
+	bat 'cd repo1/NumberGenerator & mvn package'
 	
 }
 
 def multiRepoScmCheckOut() {
 	dir('repo1') 
-	
-		git url: 'https://github.com/singhbad/PipelineJenk.git, branches: [[name: '*/master]]' 
-	
+	{
+		git url: 'https://github.com/singhbad/PipelineJenk.git'
+		branches: '[[name: '*/master]]' 
+	}
 	dir('repo2')
-	
-		git url: 'https://github.com/singhbad/Jenkins_Dragon.git, branches: [[name: '*/Jenkins_Dragon]]'
-	
+	{
+		git url: 'https://github.com/singhbad/Jenkins_Dragon.git' 
+		branches: '[[name: '*/Jenkins_Dragon]]'
+	}
 
 }
