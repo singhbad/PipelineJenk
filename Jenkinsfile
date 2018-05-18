@@ -48,12 +48,12 @@ def mvn() {
 
 def multiRepoScmCheckOut() {
 	dir('repo1') 
-	{
+	
 		git url: 'https://github.com/singhbad/PipelineJenk.git, branches: [[name: '*/master]]' 
-	}
+	
 	dir('repo2')
-	{
+	
 		git url: 'https://github.com/singhbad/Jenkins_Dragon.git, branches: [[name: '*/Jenkins_Dragon]]'
-	}
+	
 
 }
