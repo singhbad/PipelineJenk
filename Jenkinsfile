@@ -1,13 +1,15 @@
 #!groovy
 node {
     def PROJECT_NAME = "project_name"
-
+	def scmVars = checkout scm
     // Clean workspace before doing anything
     // deleteDir()
 	notifyFailed()
 	mvn()
 
 }
+
+
 
 def notifyDeployedVersion(String version) {
   emailext (
