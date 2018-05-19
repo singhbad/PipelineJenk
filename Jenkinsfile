@@ -27,7 +27,7 @@ pipeline
 				{
 					steps
 					{
-						echo "message"
+						echo "${message}"
 					}
 				
 				}
@@ -71,14 +71,14 @@ pipeline
 
 
 	}
-	post {
+	/*post {
         always {
             junit '**/target/*.xml'
         }
         /*failure {
             mail to: badal.singh@gmail.com, subject: 'The Pipeline failed :('
-        }*/
-    }
+        }
+    }*/
 
 
 }
