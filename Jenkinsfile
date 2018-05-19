@@ -8,19 +8,19 @@ node
 	stages{
 	stage{makeDirectory()}
 	
-	}
-	stages{
+	
+	
 	stage{multiRepoScmCheckOut()}
 	
-	}
-	stages{
+	
+	
 	stage{notifyFailed()}
 	
-	}
-	stages{
+	
+	
 	stage{mvn()}
 	
-	}
+	
 	//makeDirectory()
 	//multiRepoScmCheckOut()
 	//notifyFailed()
