@@ -79,3 +79,4 @@ def multiRepoScmCheckOut() {
 		checkout([$class: 'GitSCM', branches: [[name: '*/Jenkins_Dragon']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'repo2']], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/singhbad/Jenkins_Dragon.git']]])
 
 }
+}
